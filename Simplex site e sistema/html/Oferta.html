@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Oferta</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../css/edicaoLogin.css">
+
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../css/bootstrap.min.js"></script>
+  <script src="../js/jquery.mask.min.js"></script>
+
+
+
+  <!-- CSS principal do SmartMenus (obrigatório) -->
+  <link href="../css/sm-core-css.css" rel="stylesheet" type="text/css" />
+
+  <!-- Tema do menu "sm-blue" (opcional, você também pode usar seu próprio CSS) -->
+  <link href="../css/sm-blue.css" rel="stylesheet" type="text/css" />
+
+
+
+
+</head>
+
+<body style="background-image: url(../imagens/manuel.jpg); width: 100%; height: 100% ; ">
+
+
+  <nav id="main-nav">
+
+
+
+    <!-- Definição de menu de amostra -->
+    <ul id="main-menu" class="sm sm-blue"><br>
+      <li><img src="../imagens/Simp2.png" width="300px" style="top: auto;" alt=""></li>
+
+      <li><a href="index.html">Voltar ao site</a></li>
+
+
+
+      <li><a href="ListaColheiraInt.html">Visualizar produtos disponíveis</a></li>
+
+
+      <li><a href="#">Ajuda</a>
+        <ul class="mega-menu">
+          <li>
+            <!-- O mega menu suspenso -->
+            <div style="width:400px;max-width:100%;">
+              <div style="padding:5px 24px;">
+                <p><strong>Guia de tela<br></strong>Após escolher um produto na lista, você podera leiloar um produto
+                  preenchendo a lista abaixo, informando a quantidade de caixas, o código da colheita escolhida e o
+                  valor da sua oferta</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav><br><br><br><br>
+
+
+
+  <form class="box" style="float: right;" action="index.html" name="formuser" id="formuser" method="POST">
+
+
+
+
+
+    <script>
+
+      $(document).ready(function () {
+
+        $('#precoUnitario').mask('#.##0.00', { reverse: true });
+        $('#cicloMaturacao').mask('000');
+
+      })   
+    </script>
+    <br><br><br>
+
+    <center>
+      <h1>Realize um lance</h1>
+    </center>
+
+    <!-- NOME -->
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3" style="height: 50%;">
+          <label>QTD Caixas compradas</label><br>
+          <input class="form-control" type="number" id="quant_caixas_compradas" name="caixas" style="width: 107%;"
+            required>
+        </div>
+      </div><br>
+
+      <div class="row" style="padding:0px">
+        <div class="col-md-3 col-md-offset-3">
+          <label>Código da colheita</label><br>
+          <input class="form-control" type="text" id="id_colheita" name="colheita" maxlength="11" placeholder=""
+            style="width: 117%;">
+        </div>
+        <div class="col-md-3">
+          <label>Valor da oferta</label><br>
+          <input class="form-control" type="number" id="valor_oferta" name="oferta" max="10" placeholder=""
+            style="width: 117%;">
+        </div>
+      </div><br><br><br>
+
+
+      <!-- BOTÕES -->
+      <div class="row">
+        <div class="col-md-offset-3 col-md-3">
+          <input type="button" class="botao_padrao" value="Enviar propostas" id="realizar_oferta">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <input type="button" onclick="cancelarForm()" name="cancelar" value="Cancelar" class="botao_cadastra">
+        </div>
+      </div>
+    </div>
+    </div>
+  </form>
+
+  <script>
+
+    function mascara(o, f) {
+      v_obj = o
+      v_fun = f
+      setTimeout("execmascara()", 1)
+    }
+
+    function execmascara() {
+      v_obj.value = v_fun(v_obj.value)
+    }
+
+
+    function soLetras(v) {
+      return v.replace(/\d/g, "") //Remove tudo o que não é Letra
+    }
+
+    function soLetrasMA(v) {
+      v = v.toUpperCase() //Maiúsculas
+      return v.replace(/\d/g, "") //Remove tudo o que não é Letra ->maiusculas
+    }
+
+    function soLetrasMI(v) {
+      v = v.toLowerCase() //Minusculas
+      return v.replace(/\d/g, "") //Remove tudo o que não é Letra ->minusculas
+    }
+
+    function soNumeros(v) {
+      return v.replace(/\D/g, "") //Remove tudo o que não é dígito
+    }
+
+  </script>
+
+
+
+  <!-- Plugin jQuery SmartMenus -->
+  <script type="text/javascript" src="../js/jquery.smartmenus.js"></script>
+
+  <!-- Iniciação jQuery do SmartMenus -->
+  <script type="text/javascript">
+    $(function () {
+      $('#main-menu').smartmenus({
+        subMenusSubOffsetX: 1,
+        subMenusSubOffsetY: -8
+      });
+    });
+  </script>
+
+
+</body>
+<script src="../js/ofertaMicroProdutor.js"></script>
+
+</html>

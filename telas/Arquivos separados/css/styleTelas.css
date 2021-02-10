@@ -1,0 +1,437 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+body{
+  background: url(https://www.toptal.com/designers/subtlepatterns/patterns/sayagata-400px.png);
+  font-family: 'Signika', sans-serif;
+  font-size:21px;
+}
+header {
+  background: #fff;
+  padding: 0px 30px;
+  box-shadow: 0px 0px 2px #6d6d6d;       
+  position: fixed;
+  top: 10;
+  left: 10;
+  width: 150%;    
+  z-index: 991;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  left: 1065px;
+  top: 0px;
+}
+
+.circle img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.btnMenu{
+  display: block;
+  top: 30px;
+  
+}
+
+.menu{
+  top: 30px;
+  display: block;
+  cursor: pointer;
+  position: fixed;
+}
+.main {
+  position: relative;
+  top: 50px;
+  padding-top: 20px;
+}
+aside {
+  width: 70px;
+  background: #fff;
+  padding: 0px 0px 10px 0px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  height: 100%;
+  box-shadow: 0px 3px 5px #6d6d6d;
+  overflow: hidden;
+  z-index: 99;
+  position: fixed;
+}
+aside ul {
+  list-style: none;
+  width: 100%;
+}
+/*Tamanho dos campos de menu*/
+aside ul li {
+  border-bottom: 1px solid #ccc;
+  display: block none;
+  padding: 6px 20px;
+  
+}
+
+aside ul li a {
+  display: block none;
+  font-size: 18px;
+  color: #4a4a4a;
+  text-decoration: none;
+  white-space: nowrap;
+
+}
+
+article {
+  background: rgb(255, 255, 153) url();
+  padding-bottom: 100px;
+  margin-left: 5%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px #6d6d6d;
+
+}
+aside ul li:hover {
+  background: #fff;
+  box-shadow: inset 0px 0px 77px #dedede;
+}
+aside ul li a span.notif {
+  position: absolute;
+  top: 8px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  background: #343436;
+  line-height: 31px;
+  border-radius: 100%;
+  color: #fff;
+}
+.red {
+  background: #e74c3c !important;         box-shadow: 0px 0px 10px #e74c3c;
+}
+.yellow {
+  background: #f1c40f !important;         box-shadow: 0px 0px 10px #f1c40f;
+}
+.green {
+  background: #27ae60 !important;
+  box-shadow: 0px 0px 10px #27ae60;
+}
+aside ul li a span.notif.green {
+    width: 10px;
+    height: 10px;
+    color: transparent;
+    right: 50px;    
+    transition: all 0.2s ease;
+}
+aside ul li a span.notif.yellow  {
+    width: 10px;
+    height: 10px;
+    color: transparent;
+    right: 5px;
+    transition: all 0.2s ease;
+}
+aside ul li a span.notif.red  {
+    width: 10px;
+    height: 10px;
+    color: transparent;
+    right: 5px;
+    transition: all 0.2s ease;
+}
+aside ul li:hover a span.notif.red {
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    color: #fff;
+    box-shadow: 0px 0px 60px #e74c3c;
+    top: 10px;
+}
+aside ul li:hover a span.notif.yellow{
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    color: #fff;
+    box-shadow: 0px 0px 60px #f1c40f;
+    top: 10px;
+}
+aside ul li:hover a span.notif.green{
+    width: 30px;
+    height: 30px;
+    right: 15px;
+    color: #fff;
+    box-shadow: 0px 0px 60px #27ae60;
+    top: 10px;
+}
+aside.keep.width {
+    width: 200px;
+}
+aside.keep.width ul li a span.notif {
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    color: #fff;
+    box-shadow: 0px 0px 10px transparent;
+    top: 8px;
+}
+/*  */
+
+
+p.blink.mah {
+  text-align: center;
+  line-height: 25;
+  position:relative;
+}
+p.blink.mah span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 102, 153, 0);
+  top: 248px;
+  left: 360px;
+}
+/* Listas de Cultura e Safra até o proximo comentario*/
+.tg  {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+            
+.tg td{
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+  border-color:black;
+  
+}
+
+  .tg .tg-n9g5{
+    color:#000000;
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+  }
+            
+  .tg .tg-14gg{
+    background-color:#ffffff;
+    color:#000000;
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+  }
+/* Segunda lista (Safra) até o proximo comentario*/
+
+.tg1  {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+.tg1 td{
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+  border-color:black;
+}
+.tg1 th{
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:1px;
+  overflow:hidden;
+  word-break:normal;
+  border-color:black;
+}
+
+.tg1 .tg-n9g5{
+  background-color:#ffffff;
+  color:#000000;
+  border-color:inherit;
+  text-align:left;
+  vertical-align:top
+}
+
+.tg1 .tg-0lax{
+  text-align:left;
+  vertical-align:top
+}
+
+.botao_cancela{
+  border:1px solid rgb(0, 0, 0);
+  background-color: #26ff93;
+  border-radius:4px;
+  display:inline-block;
+  cursor:pointer;
+  font-family:Verdana;
+  font-weight:bold;
+  font-size:13px;
+  padding:6px 10px;
+  text-decoration:none;
+  } 
+
+  .botao_salva{
+    border:1px solid rgb(0, 0, 0);
+    background-color: #26ff93;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:13px;
+    padding:6px 15px;
+    text-decoration:none;
+    } 
+
+    /*label {
+      display: block;
+      
+    } */
+    
+    .botao_pesquisa {
+      background: #26ff93;
+      border:1px solid #000000;
+      border-radius:10px;
+      height:37px;
+      /*width:50px;*/
+      box-shadow: 1px 1px 2px #333333;
+      position: absolute;
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      left: 894px;
+      top: 30px;
+      box-sizing: border-box;
+      /*border-radius: 0px 50px 50px 0px;*/
+      
+    }
+    .logo{
+      position: absolute;
+      left: 103px;
+      top: 30px
+      
+    }
+  
+
+    .barra {
+      background: #ffffff;
+      border: 1px solid #000000;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 1px 1px 2px #333333;
+      position: absolute;
+      width: 615px;
+      height: 40px;
+      left: 380px;
+      top: 30px;
+      
+    }
+    .usuario{
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      left: 1165px;
+      top: 3px;
+      border: 2px solid #000000;
+      border-radius: 40px;
+      color: #000;
+      background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    }
+    .text{
+      font-size: 26px;
+      top: 5px;
+    }
+  
+  .form-contact {
+    width: 100%;
+    font-family: "Arial", Times, serif;
+  }
+  
+  .form-contact-input {
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    height: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    text-indent: 20px;
+  }
+  
+  .form-contact-textarea {
+    width: 100%;
+    font-size: 18px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 100px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Arial", Times, serif;
+  }
+
+  .botao_padrao{
+    padding: 10px;
+    background: rgb(63, 221, 0);
+    color: #fff;
+    width: 170px;
+    border: 0px;
+    border-radius:5px;
+    
+}
+
+.botao_cadastra{
+    padding: 10px;
+    background: rgb(255, 1, 1);
+    color: #fff;
+    width: 170px;
+    border: 0px;
+    border-radius:5px;
+  
+}
+
+.botao_padrao:hover{
+    background-color: rgb(34, 146, 0);
+    box-shadow: 2px 2px 5px black;
+    color: #aaa;
+}
+
+.botao_cadastra:hover{
+    background-color: rgb(146, 0, 0);
+    box-shadow: 2px 2px 5px black;
+    color: #aaa;
+}
+
+p#mostrar{
+  display:none
+}
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+ 

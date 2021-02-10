@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="edicaoLogin.css">
+    <title>ENTRAR</title>
+
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style="background-image: url(imagens/Agricultura-digital_-1.png); " ></body>
+    
+    <div class="container" id="meubrodher">
+    <form class="box" action="index.html" method="POST">
+
+			<br><br><br><br><br><br><br>
+		<center>
+			<p> <img src="imagens/simp.png" alt="some text" dog” align=”middle> </p>
+		</center>
+		<center>	
+			<h1>Cadastre-se</h1>
+		</center>
+
+			<!-- NOME -->
+			<div class="row"style="background-image: logo.gif" style="width: 100px" >
+				<div class="col-md-6 col-md-offset-3" style="height: 50%;">
+					<label>Nome completo:</label><br>
+					<input class="form-control" type="text" id="nome" name="nomeUsuario" placeholder="Nome" style="width: 110%;"required>	 
+				</div>
+			</div><br>
+
+			<!-- CPF e TELEFONE -->
+            <div class="row">
+				<div class="col-md-3 col-md-offset-3">
+					<label>CPF</label><br>
+					<input class="form-control" type="text" id="cpf" name="cpfUsuario" placeholder="CPF" style="width: 120%;">
+				</div>
+				<div class="col-md-3">
+					<label>Data de Nascimento</label><br>
+					<input class="form-control" type="text" id="data" name="nicknameUsuario" placeholder="            __/__/__" style="width: 120%;">
+				</div>
+			</div><br>
+
+			<!-- E-MAIL -->
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3" style="height: 50%;">
+					<label>E-mail:</label><br>
+					<input class="form-control" type="text" id="e-mail" name="nomeUsuario" placeholder="email" style="width: 110%;"required>
+			</div>
+			</div><br>
+
+			<!-- CIDADE e ESTADO -->
+            <div class="row">
+				<div class="col-md-3 col-md-offset-3">
+					<label>Telefone-Fixo</label><br>
+					<input class="form-control" type="text" id="fixo" name="cpfUsuario" placeholder="2571-1199" style="width: 120%;">
+				</div>
+				<div class="col-md-3">
+					<label>Telefone-Celular</label><br>
+					<input class="form-control" type="text" id="celular" name="nicknameUsuario" placeholder="99999-99999" style="width: 120%;">
+				</div>
+			</div><br>
+
+			<!-- RUA -->
+			<!--<div class="row">
+				<div class="col-md-6 col-md-offset-3" style="height: 50%;">
+				<label>Rua:</label><br>
+				<input class="form-control" type="text" id="rua" name="nomeUsuario" placeholder="rua" style="width: 110%;"
+				 required>
+			</div>
+			</div><br>-->
+
+			<!-- SENHA e CONFIRMAÇÃO -->
+			<div class="row">
+				<div class="col-md-3 col-md-offset-3">
+					<label>Senha</label><br>
+					<input class="form-control" style="width: 120%;" type="password" id='senha' name="senhaUsuario" placeholder="Senha" required />
+				</div>
+				<div class="col-md-3">
+					<label>Confirmar Senha</label><br>
+					<input class="form-control" style="width: 120%;" type="password" id='senha1' placeholder="Confirmar Senha" required/>
+				</div>
+			</div><br>
+
+			<!-- BOTÕES -->
+			<div class="row">
+				<div class="col-md-offset-3 col-md-3">
+					<input type="button" onclick="cancelarForm()" name="cancelar" value="Cancelar" class="botao_padrao">
+				</div>
+				<div class="col-md-3">
+					<input type="button" class="botao_cadastra" value="Cancelar" onclick="return validar()">
+				</div>
+			</div>
+		  <br><br>
+		</div>
+	</div>
+    </form>
+
+</body>
+
+</html>
+
+<script>
+
+    function vamosLa() {
+
+        var nome = document.getElementById('nome').value;
+
+        var senha = document.getElementById('senha').value;
+
+        if (nome.length == "" && senha.length == "") {
+
+            alert("Insira seu nome e sua senha!");
+
+        }
+       else if (nome.length == "") {
+
+            alert("Insira seu nome ou seu e-mail! ");
+
+        }
+        else if (senha.length == "") {
+
+            alert("Insira sua senha! ");
+        }
+    }
+</script>

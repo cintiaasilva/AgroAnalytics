@@ -1,0 +1,48 @@
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+.label-cultura {
+    display: block;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.input-cultura {
+    display: block;
+}
+
+#cadastrar-cultura,
+#buscar-culturas {
+    margin: 0px;
+    width: 20%;
+    padding: 15px;
+    background: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+input {
+    width: 30%;
+    padding: 15px;
+}
+
+#tabela-culturas {
+    margin: 20px 0 40px;
+}
+
+#cabecalho-tabela-culturas {
+    background: lightgreen;
+}
+
+td,
+th {
+    border: 1px solid black;
+}

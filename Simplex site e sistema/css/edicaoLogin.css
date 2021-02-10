@@ -1,0 +1,45 @@
+.box {
+    padding: 0px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.74);
+    width: 700px;
+    height: 500px;
+}
+
+.botao_padrao{
+    padding: 10px;
+    background: rgb(63, 221, 0);
+    color: #fff;
+    width: 175px;
+    border: 0px;
+    border-radius:5px;
+    right: 100px;
+}
+
+.botao_cadastra{
+    padding: 10px;
+    background: rgb(255, 1, 1);
+    color: #fff;
+    width: 175px;
+    border: 0px;
+    border-radius:5px;
+    left: 370px;
+    position: relative;
+    top: -40px;
+}
+
+.botao_padrao:hover{
+    background-color: rgb(34, 146, 0);
+    box-shadow: 2px 2px 5px black;
+    color: #aaa;
+}
+
+.botao_cadastra:hover{
+    background-color: rgb(146, 0, 0);
+    box-shadow: 2px 2px 5px black;
+    color: #aaa;
+}
+

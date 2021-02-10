@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Colheitas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Signika:400,600'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<!-- HOVER EFFECTS (da hora) -->
+<link rel="stylesheet" href="../css/hover-min.css">
+<link rel="stylesheet" href="../css/styleTelas.css">
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- ICONE E TITULO ABA NAVEGADOR -->
+<link rel="icon" href="../images/mh_min_logo2.png">
+
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css" rel="stylesheet">
+
+<!-- JAVASCRIPT PERSONALIZADO -->
+<script src="../js/estrutura_table.js"></script>
+
+
+<script src='https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js'></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+
+
+<script src='https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js'></script>
+<script src="../js/script.js"></script>
+
+<link href="../css/sm-core-css.css" rel="stylesheet" type="text/css" />
+
+<!-- Tema do menu "sm-blue" (opcional, você também pode usar seu próprio CSS) -->
+<link href="../css/sm-blue.css" rel="stylesheet" type="text/css" />
+
+<script src='../js/lista_colheita.js'></script>
+<script src='../js/delete.js'></script>
+
+<script type="text/javascript" src="../js/jquery.smartmenus.js"></script>
+
+
+</head>
+
+
+<!-- IMPORT DATA TABLE -->
+
+
+
+<!-- Iniciação jQuery do SmartMenus -->
+<script type="text/javascript">
+  $(function() {
+    $('#main-menu').smartmenus({
+      subMenusSubOffsetX: 1,
+      subMenusSubOffsetY: -8
+    });
+  });
+</script>
+
+
+
+  <!-- Todo o campo do topo da pagina-
+
+          
+   (<article>)Tag que armazena o quadro amarelo e as listas-->
+   
+  
+      <body onload="populaTabela()">
+
+      
+        <nav id="main-nav">
+
+          <!-- Definição de menu de amostra -->
+          <ul id="main-menu" class="sm sm-blue"><br>
+              <li><img src="../imagens/Simp2.png" width="300px"  style="top: auto;" alt=""></li>
+              
+              <li><a href="MenuPrincipal.html">Início</a></li>
+              
+              <li><a href="#">Insumo</a>
+                <ul>
+                  <li><a href="CadastroInsumo.html">Incluir</a></li>
+    
+                  <li><a href="#">Visualizar</a>
+                    <ul>
+                      <li><a href="ListaInsumo.html">Lista de insumo</a></li>
+                      <li><a href="Grafico.html">Grafico</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+    
+            <li><a href="#">Safra</a>
+              <ul>
+                <li><a href="#">Incluir</a>
+                <ul>
+                    <li><a href="CadastroPlantacao.html">Plantação</a></li>
+                    <li><a href="CadastroTalhão.html">Talhão</a></li>
+                    <li><a href="CadastroCultura.html">Cultura</a></li>
+                    <li><a href="CadastroColheita.html">Colheita</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Visualizar</a>
+                  <ul>
+                    <li><a href="ListaPlantacao.html">Plantação</a></li>
+                    <li><a href="ListaTalhao.html">Talhão</a></li>
+                    <li><a href="ListaCultura.html">Cultura</a></li>
+                    <li><a href="ListaColheira.html">Colheita</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Ajuda</a>
+              <ul class="mega-menu">
+                <li>
+                  <!-- O mega menu suspenso -->
+                  <div style="width:400px;max-width:100%;">
+                    <div style="padding:5px 24px;">
+                      <p><strong>Guia de tela<br></strong>Nessa rotina você ira visualizar todas as colheitas cadastradas</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            
+            <img class="circle" src="../imagens/mei.jpg" alt="some text" width=15 height=110 style="left: 0px;"> 
+              
+              <b><p class="nome">Alfredo Neves</p></b>
+    
+           
+             
+          </ul>
+        </nav>
+
+
+        <span id="topo"></span>
+
+        <div class="text-center">
+            <h1>Lista de colheitas</h1>
+        </div>
+
+        <div class="container">
+            <table  class="estrutura_table table table-spriped table-bordered" id="tabela-culturas" style="width:100%">
+            <thead>
+                <tr>
+                     
+                    <th>Código da plantação</th>
+                    <th>Cultura</th>
+                    <th>Talhões</th>
+                    <th>Insumos</th>
+                    <th>Data da Colheita</th>
+                    <th>Quantidade Caixas</th>
+                    <th>Preço Caixa</th>
+
+              
+             
+              
+                </tr>
+            </table>
+        </div>
+        
+
+  </section>
+
+  
+
+
+  </section>
+
+  
+  <!-- partial -->
+  
+ 
+
+</body>
+
+</html>
+<script>
+  function deletaCultura(culturaId) {
+
+  var xhr = new XMLHttpRequest();
+
+  xhr.open("DELETE", "http://localhost:8080/culturas?id=" + culturaId);
+
+  console.log("haiii","http://localhost:8080/culturas?id=" + culturaId);
+
+
+
+  xhr.setRequestHeader("Content-type", "application/json");
+
+  xhr.send();
+
+  xhr.addEventListener("load", function() {
+
+      var resposta = xhr.responseText;
+
+      var cultura = JSON.parse(resposta);
+
+      console.log(resposta);
+
+      console.log(cultura.id);
+
+      alert("deletado")
+
+  });
+
+  };
+</script>
+<script src="../imagens/form.js"></script>

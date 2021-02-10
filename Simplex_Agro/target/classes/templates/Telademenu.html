@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 	initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pagina Inicial</title>
+
+    <link rel="stylesheet" href="../css/css/demo.css">
+    <link rel="stylesheet" href="../css/css/navigation-icons.css">
+    <link rel="stylesheet" rel="stylesheet"
+        href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/animate.css/animate.css" type="text/css" />
+    
+        <!--<link rel="stylesheet" href="https://unpkg.com/rmodal/dist/rmodal.css" type="text/css" />-->
+        <link rel="stylesheet" href="../css/cssdefiltro/rmodal.css">
+        <script type="text/javascript" src="https://unpkg.com/rmodal/dist/rmodal.js"></script>
+        <link rel="stylesheet" href="../css/cssdefiltro/bootstrap.min.css">
+       
+
+
+</head>
+
+<body>
+    
+        <div class="imagemfundo">
+            <nav class="menu-navigation-icons">
+                <a href="#" id="showModal" class="menu-blue"><i id="showModal" class="fa fa-cubes" aria-hidden="true"></i><span  id="showModal">Estoque</span></a>
+                <a href="#" id="p1" class="menu-green"><i id="p1" class="fa fa-money" aria-hidden="true"></i><span id="p1">Financeiro</span></a>
+                <a href="#" id="showModal1" class="menu-yellow"><i  id="showModal1" class="fa fa-flask" aria-hidden="true"></i><span id="showModal1">Insumos</span></a>
+                <a href="#" id="show" class="menu-red"><i id="show" class="fa fa-pagelines" aria-hidden="true"></i><span  id="show">Safra</span></a>
+            </nav>
+        </div>
+
+
+
+        <!--modal de esquecimento de senha-->
+    <style type="text/css">
+        .modal .modal-dialog {
+            width: 400px;
+            top: top;
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var modal = new RModal(document.getElementById('modal'), {
+                //content: 'Abracadabra'
+                beforeOpen: function (next) {
+                    console.log('beforeOpen');
+                    next();
+                }
+                , afterOpen: function () {
+                    console.log('opened');
+                }
+
+                , beforeClose: function (next) {
+                    console.log('beforeClose');
+                    next();
+                }
+                , afterClose: function () {
+                    console.log('closed');
+                }
+                // , bodyClass: 'modal-open'
+                // , dialogClass: 'modal-dialog'
+                // , dialogOpenClass: 'animated fadeIn'
+                // , dialogCloseClass: 'animated fadeOut'
+
+                // , focus: true
+                // , focusElements: ['input.form-control', 'textarea', 'button.btn-primary']
+
+                // , escapeClose: true
+            });
+
+            document.addEventListener('keydown', function (ev) {
+                modal.keydown(ev);
+            }, false);
+
+            document.getElementById('showModal').addEventListener("click", function (ev) {
+                ev.preventDefault();
+                modal.open();
+            }, false);
+            document.getElementById('p1').addEventListener("click", function (ev) {
+                ev.preventDefault();
+                modal.open();
+            }, false);
+            document.getElementById('showModal1').addEventListener("click", function (ev) {
+                ev.preventDefault();
+                modal.open();
+            }, false);
+            document.getElementById('show').addEventListener("click", function (ev) {
+                ev.preventDefault();
+                modal.open();
+            }, false);
+
+            window.modal = modal;
+        }
+    </script>
+
+
+
+    <div id="modal" class="modal">
+        <div class="modal-dialog animated">
+            <div class="modal-content">
+                <form class="form-horizontal" method="get">
+
+
+                    <div class="modal-body" style="background-color:whitesmoke;">
+                        <div class="form-group">
+
+
+                            <center><button class="btn btn-success"  style="width: 100%; height: 40%;" type="button"
+                                    onclick="modal.close();">Cadastrar</button></center><br>
+
+                            <center><button class="btn btn-success" style="width: 100%;" type="button"
+                                    onclick="modal.close();">Movimentar</button></center><br>
+
+                            <center><button class="btn btn-success" style="width: 100%;" type="button"
+                                    onclick="modal.close();">Visualizar</button><br></center>
+
+
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+.label-input {
+    display: block;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.input-cultura {
+    display: block;
+}
+input {
+    width: 30%;
+    padding: 15px;
+}
+
+#botao-cadastrar-plantacao {
+    margin: 10px;
+    width: 20%;
+    padding: 15px;
+    background: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: block;
+}
+

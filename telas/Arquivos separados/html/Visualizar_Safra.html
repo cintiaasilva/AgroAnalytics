@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>VerSafra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Signika:400,600'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="../js/VisualizarSafra.js"></script>
+</head>
+
+<body>
+         
+  <!-- Todo o campo do topo da pagina-->
+  <header>
+    <span onclick="btnMenu()"><img class= "menu" src="../imagens/images.png" id="btnMenu"alt="Buscar" /></span>
+    
+    <img class="logo" src="../imagens/Simp.png" alt="some text" width=150 height=45>
+    
+    
+        <!-- <form> que armazena a barra de pesquisa -->
+        <form class="Barra_pesquisa">
+                                                                                                                                                                                        
+        <input class="barra" type="search" id="busca" name="">
+        <button class="botao_pesquisa" type="submit" id="barra"><img src="../imagens/lupa.png" id="btnBusca"alt="Buscar" /></button>
+       
+       
+        <div class="circle">
+          <center><img class="imagem" src="../imagens/mei.jpg" alt="some text" width=5 height=110 style="left: 0px;" ></center>
+        </div>
+        
+    
+        </form>
+
+  </header>
+
+  <section class="main">
+    
+    <!--Contem os dados da coluna de menu e os mantem na lateral da pagina-->
+    <aside class="keep">
+  
+        <br><br><br>
+      <!--A tag <ul> armazena todo o conjunto da lista da coluna-->
+      <ul>
+
+        <!--tag <li> indica que o elemento esta armazenado em uma lista-->
+        <li>
+
+            <!--Adicionar o link da pagina a ser referenciada na tag <a>-->
+            <a href="">
+            <span><img src="../imagens/estoque.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderE">Estoque</center> 
+        </li>
+        <li>
+          <a href="">
+            <span><img src="../imagens/financeiro.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderF">Financeiro</center>
+        </li>
+        <li>
+          <a href="">
+            <span><img src="../imagens/Insumo.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderI">Insumo</center>
+        </li>
+        <li>
+          <a href="">
+            <span><img src="../imagens/safra.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderS">Safra</center>
+        </li>
+      </ul>
+    </aside>
+  
+
+    <!--(<article>)Tag que armazena o quadro amarelo e as listas-->
+    <article>
+        <section class="4u"> <a href="#" class="image featured"><img src="images/pic01.jpg" alt=""></a>
+          <div class="box">
+            <p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
+            <a href="#" class="button">Read More</a> </div>
+        </section>
+        <section class="4u"> <a href="#" class="image featured"><img src="images/pic02.jpg" alt=""></a>
+          <div class="box">
+            <p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum  wisi maecenas ligula.</p>
+            <a href="#" class="button">Read More</a> </div>
+        </section>
+      
+    </article>
+  </section>
+
+</body>
+
+</html>

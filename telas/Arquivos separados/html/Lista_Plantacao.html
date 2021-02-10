@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Insumo/Plantação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Signika:400,600'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<!-- HOVER EFFECTS (da hora) -->
+<link rel="stylesheet" href="../css/hover-min.css">
+<link rel="stylesheet" href="../css/stylePI1.css">
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- ICONE E TITULO ABA NAVEGADOR -->
+<link rel="icon" href="../images/mh_min_logo2.png">
+
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css" rel="stylesheet">
+
+<!-- JAVASCRIPT PERSONALIZADO -->
+<script src="monkeys.js"></script>
+<script src="../js/estrutura_table.js"></script>
+<script src="../js/lista_usuario.js"></script>
+
+<!-- IMPORT DATA TABLE -->
+<script src='https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js'></script>
+<script src='https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js'></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+
+  
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+         
+  <!-- Todo o campo do topo da pagina-->
+  <header>
+    <span onclick="btnMenu()"><img class= "menu" src="../imagens/images.png" id="btnMenu"alt="Buscar" /></span>
+    
+
+    <img class="logo" src="../imagens/Simp.png" alt="some text" width=150 height=45>
+    
+    
+        <!-- <form> que armazena a barra de pesquisa -->
+        <form class="Barra_pesquisa">
+                                                                                                                                                                                        
+        <input class="barra" type="search" id="busca" name="">
+        <button class="botao_pesquisa" type="submit" id="barra"><img src="../imagens/lupa.png" id="btnBusca"alt="Buscar" /></button>
+       
+       
+        <button   href="#" class="usuario"  type="submit">  
+        <img class="imagem" src="../imagens/usuario.jpg" alt="some text" width=35 height=35 >   
+        
+    
+        </form>
+
+  </header>
+  <!---->
+  <section class="main">
+    
+    <!--Contem os dados da coluna de menu e os mantem na lateral da pagina-->
+    <aside class="keep">
+  
+        <br><br><br>
+      <!--A tag <ul> armazena todo o conjunto da lista da coluna-->
+      <ul>
+
+        <!--tag <li> indica que o elemento esta armazenado em uma lista-->
+        <li>
+
+            <!--Adicionar o link da pagina a ser referenciada na tag <a>-->
+            <a href="">
+            <span><img src="../imagens/estoque.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderE">Estoque</center> 
+        </li>
+        <li>
+          <a href="">
+            <span><img src="../imagens/financeiro.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderF">Financeiro</center>
+        </li>
+        <li>
+          <a href="">
+            <span><img src="../imagens/Insumo.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderI">Insumo</center>
+        </li>
+        <li>
+          <a href="">
+            <span><img src="../imagens/safra.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderS">Safra</center>
+        </li>
+      </ul>
+    </aside>
+  
+
+    <!--(<article>)Tag que armazena o quadro amarelo e as listas-->
+      <article>
+        <br>
+      <body onload="populaTabela()">
+
+        <span id="topo"></span>
+
+        <div class="text-center">
+            <h1 style="font-family: Arial, Helvetica, sans-serif; font-size:x-largeS;">Lista de Plantação</h1>
+        </div>
+
+        <div class="container">
+            <table  class="estrutura_table table table-spriped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th style="width: 50%">Nome</th>
+                    <th>Tipo</th>
+                    <th>Maturação</th>
+                </tr>
+            </thead>
+            </table>
+        </div>
+      
+       
+ 
+  </section>
+</article>
+  
+  <!-- partial -->
+  
+ 
+
+</body>
+
+</html>

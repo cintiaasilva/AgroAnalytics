@@ -1,0 +1,12 @@
+2019-11-03 12:26:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USUARIO" not found; SQL statement:
+insert into usuario (id, cpf, data_nascimento, localizacao_id, nome, telefone_id) values (null, ?, ?, ?, ?, ?) [42102-199]
+2019-11-03 12:27:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USUARIO" not found; SQL statement:
+insert into usuario (id, cpf, data_nascimento, localizacao_id, nome, telefone_id) values (null, ?, ?, ?, ?, ?) [42102-199]
+2019-11-03 12:27:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USUARIO" not found; SQL statement:
+insert into usuario (id, cpf, data_nascimento, localizacao_id, nome, telefone_id) values (null, ?, ?, ?, ?, ?) [42102-199]
+2019-11-03 12:28:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USUARIO" not found; SQL statement:
+insert into usuario (id, cpf, data_nascimento, localizacao_id, nome, telefone_id) values (null, ?, ?, ?, ?, ?) [42102-199]

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cadastro de Plantação</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../css/edicaoLogin.css">
+
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../css/bootstrap.min.js"></script>
+  <script src="../js/jquery.mask.min.js"></script>
+  <script src="imputmask.min.js"></script>
+
+
+  <!-- CSS principal do SmartMenus (obrigatório) -->
+  <link href="../css/sm-core-css.css" rel="stylesheet" type="text/css" />
+
+  <!-- Tema do menu "sm-blue" (opcional, você também pode usar seu próprio CSS) -->
+  <link href="../css/sm-blue.css" rel="stylesheet" type="text/css" />
+
+
+
+
+</head>
+
+<body style="background-image: url(../imagens/manuel.jpg); width: 100%; height: 100% ; ">
+
+
+  <nav id="main-nav">
+
+
+
+    <!-- Definição de menu de amostra -->
+    <ul id="main-menu" class="sm sm-blue"><br>
+      <li><img src="../imagens/Simp2.png" width="300px" style="top: auto;" alt=""></li>
+
+      <li><a href="MenuPrincipal.html">Início</a></li>
+
+      <li><a href="#">Insumo</a>
+        <ul>
+          <li><a href="CadastroInsumo.html">Incluir</a></li>
+
+          <li><a href="#">Visualizar</a>
+            <ul>
+              <li><a href="ListaInsumo.html">Lista de insumo</a></li>
+              <li><a href="Grafico.html">Grafico</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li><a href="#">Safra</a>
+        <ul>
+          <li><a href="#">Incluir</a>
+            <ul>
+              <li><a href="CadastroPlantacao.html">Plantação</a></li>
+              <li><a href="CadastroTalhão.html">Talhão</a></li>
+              <li><a href="CadastroCultura.html">Cultura</a></li>
+              <li><a href="CadastroColheita.html">Colheita</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Visualizar</a>
+            <ul>
+              <li><a href="ListaPlantacao.html">Plantação</a></li>
+              <li><a href="ListaTalhao.html">Talhão</a></li>
+              <li><a href="ListaCultura.html">Cultura</a></li>
+              <li><a href="ListaColheira.html">Colheita</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Ajuda</a>
+        <ul class="mega-menu">
+          <li>
+            <!-- O mega menu suspenso -->
+            <div style="width:400px;max-width:100%;">
+              <div style="padding:5px 24px;">
+                <p><strong>Guia de tela<br></strong>Nessa rotina você ira cadastrar uma nova plantação informando informando a data de criação, 
+                                                    o código da cutura que estara associado, o código do talhão associado, o código do insumo 
+                                                    que sera aplicado e a quantidade de insumos aplicados</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <img class="circle" src="../imagens/mei.jpg" alt="some text" width=15 height=110 style="left: 0px;">
+
+      <b>
+        <p class="nome">Alfredo Neves</p>
+      </b>
+
+
+
+    </ul>
+  </nav><br><br><br><br>
+
+
+
+  <form class="box" style="float: right;" action="index.html" name="formuser" id="formuser" method="POST">
+
+   
+    <br><br><br>
+
+    <script>
+
+        $(document).ready(function () {
+       
+        
+         $('#codTalhao').mask('0;0;0;0;0;0;0;0;0');
+         $('#codCultura').mask('0');
+         $('#codInsumo').mask('0;0;0;0;0;0;0;0;0');
+        
+    })   
+            </script>
+
+    <center>
+      <h1>Cadastro de Plantação</h1>
+    </center>
+
+    <!-- NOME -->
+    <div class="row" style="padding:0px">
+        <div class="col-md-3 col-md-offset-3">
+          <label>Data de Criação</label><br>
+          <input class="form-control" type="date" id="dataCriacao" name="dataCriacao" maxlength="11" placeholder="" onblur="return verificarCPF(this.value)" style="width: 117%;">
+        </div>
+        <div class="col-md-3">
+          <label>Código da Cultura</label><br>
+          <input class="form-control" type="text" id="codCultura" name="codCultura" max="10" placeholder="" style="width: 117%;">
+        </div>
+      </div><br>
+
+      <div class="row" style="padding:0px">
+          <div class="col-md-3 col-md-offset-3">
+            <label>Código de talhão</label><br>
+            <input class="form-control" type="text" id="codTalhao" name="codTalhao" maxlength="11" placeholder="" onblur="return verificarCPF(this.value)" style="width: 117%;">
+          </div>
+          <div class="col-md-3">
+            <label>Código de Insumo</label><br>
+            <input class="form-control" type="text" id="codInsumo" name="codInsumo" max="10" placeholder="" style="width: 117%;">
+          </div>
+        </div><br>
+
+        <div class="row"style="background-image: logo.gif" style="width: 100px" >
+          <div class="col-md-6 col-md-offset-3" style="height: 50%;">
+            <form id="form-cadastrar-insumo" name="forcult">
+
+            <label for="qtdLitros">QTD Litros aplicados</label><br>
+            <input class="form-control" type="text" id="qtdLitros" name="qtdLitros" maxlength="11" placeholder="" onblur="return verificarCPF(this.value)" style="width: 107%;">	 
+          </div>
+
+        </div>
+      
+    </div><br><br>
+
+    <!-- BOTÕES -->
+    <div class="row">
+      <div class="col-md-offset-3 col-md-3">
+        <input type="button" class="botao_padrao" value="Cadastrar" id="cadastrar-plantacao">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <input type="button" onclick="cancelarForm()" name="cancelar" value="Cancelar" class="botao_cadastra">
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+  </form>
+
+  <script>
+
+    function mascara(o, f) {
+      v_obj = o
+      v_fun = f
+      setTimeout("execmascara()", 1)
+    }
+
+    function execmascara() {
+      v_obj.value = v_fun(v_obj.value)
+    }
+
+
+    function soLetras(v) {
+      return v.replace(/\d/g, "") //Remove tudo o que não é Letra
+    }
+
+    function soLetrasMA(v) {
+      v = v.toUpperCase() //Maiúsculas
+      return v.replace(/\d/g, "") //Remove tudo o que não é Letra ->maiusculas
+    }
+
+    function soLetrasMI(v) {
+      v = v.toLowerCase() //Minusculas
+      return v.replace(/\d/g, "") //Remove tudo o que não é Letra ->minusculas
+    }
+
+    function soNumeros(v) {
+      return v.replace(/\D/g, "") //Remove tudo o que não é dígito
+    }
+
+  </script>
+
+
+
+  <!-- Plugin jQuery SmartMenus -->
+  <script type="text/javascript" src="../js/jquery.smartmenus.js"></script>
+
+  <!-- Iniciação jQuery do SmartMenus -->
+  <script type="text/javascript">
+    $(function () {
+      $('#main-menu').smartmenus({
+        subMenusSubOffsetX: 1,
+        subMenusSubOffsetY: -8
+      });
+    });
+  </script>
+
+
+</body>
+<script src="../js/plantacao.js"></script>
+
+</html>

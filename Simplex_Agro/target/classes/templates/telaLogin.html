@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="../css/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/css/style1.css">
+  <title>Tela de Login</title>
+</head>
+
+<body>
+
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="login100-more"></div>
+
+      <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+        <form class="wrap-login100-form validate-form" id="logar">
+
+          <div class='cp-img-div'>
+            <img
+              err-src="data:image/png;base64,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"
+              ng-src="https://static.fluigidentity.com/cloudpass/assets/image/application/medium/1.png" />
+            <span class="login100-form-title p-b-59">
+              Login
+            </span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="E-mail">
+            <span class="label-input100">E-mail</span>
+            <input class="input100" type="text" name="login" id="email">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Digite seu email: ex@abc.xyz">
+            <span class="label-input100">Senha</span>
+            <input class="input100" type="password" name="senha" id="senhas">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+              <div class="login100-form-bgbtn"></div>
+              <button class="login100-form-btn" id="btn-submit" type="submit">
+                Entrar
+              </button>
+              <p id="result"></p>
+            </div>
+            <br> <br>
+            <a href="" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+              Esqueceu sua senha?
+              <i class="fa fa-long-arrow-right m-l-5"></i>
+            </a>
+            <br>
+            <a href="" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+              Faça seu cadastro!
+              <i class="fa fa-long-arrow-right m-l-5"></i>
+            </a>
+
+
+        </form>
+        <span id="span_mensagem" style="display: none;">Login ou senha inválida</span>
+
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script>
+
+          $("form#logar").on("submit", function (e) {
+            let form = document.getElementById("logar");
+            let data = {
+              login: form.login.value,
+              senha: form.senha.value
+            }
+            e.preventDefault();
+            $.ajax({
+              type: "POST",
+              headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
+              url: "http://localhost:8080/login",
+              dataType: "json",
+              data: JSON.stringify(data),
+              //data: $("form#logar").serialize(),
+              success: function (data) {
+                alert(data);
+                window.location = "./Telademenu.html";
+              },
+              error: (e) => {
+                alert("Falhou");
+              }
+            })
+          })
+
+
+          var login = document.getElementById("email")
+            , senha = document.getElementById("senhas");
+
+        </script>
+
+</body>
+
+</html>

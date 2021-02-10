@@ -1,0 +1,447 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+.sm-blue {
+  background: transparent;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+body{
+  background-color: rgb(255, 255, 162);
+}
+
+
+/*estilo da font dos menus*/
+.sm-blue a, .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active {
+  padding: 10px 20px;
+  /* make room for the toggle button (sub indicator) */
+  padding-right: 58px;
+  background: #32c87d;
+  background-image: linear-gradient(to bottom, #32c87d, #32c87d);
+  color: #fff;
+  font-family: "PT Sans Narrow", "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+/*Não faz nada so existe*/
+.sm-blue a.current {
+  background: #059200;
+  background-image: linear-gradient(to bottom, #32c87d, #32c87d);
+  color: #fff;
+  
+}
+
+/*Não faz nada so existe*/
+.sm-blue a.disabled {
+  color: #b5e8a1;
+}
+/*Move as setinhas do menu*/
+.sm-blue a .sub-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: auto;
+  right: 4px;
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  font: bold 16px/34px monospace !important;
+  text-align: center;
+  text-shadow: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+/*Responsivo*/
+.sm-blue a .sub-arrow::before {
+  content: '+';
+}
+.sm-blue a.highlighted .sub-arrow::before {
+  content: '-';
+}
+.sm-blue > li:first-child > a, .sm-blue > li:first-child > :not(ul) a {
+  border-radius: 8px 8px 0 0;
+}
+.sm-blue > li:last-child > a, .sm-blue > li:last-child > *:not(ul) a, .sm-blue > li:last-child > ul, .sm-blue > li:last-child > ul > li:last-child > a, .sm-blue > li:last-child > ul > li:last-child > *:not(ul) a, .sm-blue > li:last-child > ul > li:last-child > ul, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul {
+  border-radius: 0 0 8px 8px;
+}
+.sm-blue > li:last-child > a.highlighted, .sm-blue > li:last-child > *:not(ul) a.highlighted, .sm-blue > li:last-child > ul > li:last-child > a.highlighted, .sm-blue > li:last-child > ul > li:last-child > *:not(ul) a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted, .sm-blue > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a.highlighted {
+  border-radius: 0;
+}
+.sm-blue ul {
+  background: #fff;
+}
+.sm-blue ul ul {
+  background: rgba(102, 102, 102, 0.1);
+}
+
+/*Não faz nada so existe*/
+.sm-blue ul a, .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active {
+  background: transparent;
+  color: #1a1a1a;
+  font-size: 16px;
+  text-shadow: none;
+  border-left: 8px solid transparent;
+}
+/*Não faz nada so existe*/
+.sm-blue ul a.current {
+  background: #119200;
+  background-image: linear-gradient(to bottom, #119200, #119200);
+  color: #fff;
+}
+/*Não faz nada so existe*/
+.sm-blue ul a.disabled {
+  color: #b3b3b3;
+}
+
+/*Não faz nada so existe*/
+.sm-blue ul ul a,
+.sm-blue ul ul a:hover,
+.sm-blue ul ul a:focus,
+.sm-blue ul ul a:active {
+  border-left: 16px solid transparent;
+}
+.sm-blue ul ul ul a,
+.sm-blue ul ul ul a:hover,
+.sm-blue ul ul ul a:focus,
+.sm-blue ul ul ul a:active {
+  border-left: 24px solid transparent;
+}
+.sm-blue ul ul ul ul a,
+.sm-blue ul ul ul ul a:hover,
+.sm-blue ul ul ul ul a:focus,
+.sm-blue ul ul ul ul a:active {
+  border-left: 112px solid transparent;
+}
+.sm-blue ul ul ul ul ul a,
+.sm-blue ul ul ul ul ul a:hover,
+.sm-blue ul ul ul ul ul a:focus,
+.sm-blue ul ul ul ul ul a:active {
+  border-left: 40px solid transparent;
+}
+/*Não faz nada so existe*/
+.sm-blue ul li {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+/*Não faz nada so existe*/
+.sm-blue ul li:first-child {
+  border-top: 0;
+}
+
+@media (min-width: 768px) {
+  /* Mudar para o layout da área de trabalho
+  -----------------------------------------------
+     Eles transformam a árvore de menus de
+     dobrável para a área de trabalho (barra de navegação + menus suspensos)
+  ----------------------------------------------- * /
+  /* start ... (não é recomendável editar essas regras) */
+
+  /*retirei isso aqui e a pagina parou de funcionar (recomendo não mexer meesmo kkk)*/
+  .sm-blue ul {
+    position: absolute;
+    width: 12em;
+  }
+  /*retirei isso aqui e a pagina parou de funcionar (recomendo não mexer meesmo kkk)*/
+  .sm-blue li {
+    float: left;
+  }
+/*Não faz nada só existe*/
+  .sm-blue.sm-rtl li {
+    float: right;
+  }
+
+  /*Bagunça com o quadro de Ajuda*/
+  .sm-blue ul li, .sm-blue.sm-rtl ul li, .sm-blue.sm-vertical li {
+    float: none;
+  }
+
+  /*Não faz nada só existe*/
+  .sm-blue a {
+    white-space: nowrap;
+  }
+
+  /*Não faz nada só existe*/
+  .sm-blue ul a, .sm-blue.sm-vertical a {
+    white-space: normal;
+  }
+
+  /*Não faz nada só existe*/
+  .sm-blue .sm-nowrap > li > a, .sm-blue .sm-nowrap > li > :not(ul) a {
+    white-space: nowrap;
+  }
+
+  /* ...end */
+
+  /*Contem a barra de menu aqui CLERIII*/
+  .sm-blue {
+    background: rgb(137, 219, 105);
+    background-image: linear-gradient(to bottom, rgb(137, 219, 105), rgb(137, 219, 105));
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    align-items: center;
+   
+    
+  }
+  /*Altera a barra de menu*/
+  .sm-blue a, .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
+    padding: 20px 24px;
+    background: rgb(137, 219, 105);
+    background-image: linear-gradient(to bottom, rgb(137, 219, 105), rgb(137, 219, 105));
+    /*cor da font do menu*/
+    color: rgb(255, 255, 255);
+    align-content: center;
+    width: 100%;
+
+  }
+
+  /*Não faz nada só existe*/
+  .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
+    background: #32c87d;
+    background-image: linear-gradient(to bottom, #32c87d, #32c87d);
+  }
+
+  /*Não faz nada só existe*/
+  .sm-blue a.current {
+    background: #32c87d;
+    background-image: linear-gradient(to bottom, #32c87d, #32c87d);
+    color: #fff;
+  }
+  /*Não faz nada só existe*/
+  .sm-blue a.disabled {
+    background: #32c87d;
+    background-image: linear-gradient(to bottom, #32c87d, #32c87d);
+    color: #a1d1e8;
+  }
+
+  /*setas do menu*/
+  .sm-blue a .sub-arrow {
+    top: auto;
+    margin-top: 0;
+    bottom: 2px;
+    left: 50%;
+    margin-left: -5px;
+    right: auto;
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid dashed dashed dashed;
+    border-color: #a1d1e8 transparent transparent transparent;
+    background: transparent;
+    border-radius: 0;
+    align-items: center;
+  }
+
+  /*Não faz nada só existe*/
+  .sm-blue a .sub-arrow::before {
+    display: none;
+  }
+  /*muda o canto inferior esquerdo do quadro azul (e só)*/
+  .sm-blue > li:first-child > a, .sm-blue > li:first-child > :not(ul) a {
+    border-radius: 8px 0 0 8px;
+    align-items: center;
+  }
+  /*Não faz nada só existe*/
+  .sm-blue > li:last-child > a, .sm-blue > li:last-child > :not(ul) a {
+    border-radius: 0 8px 8px 0 !important;
+    align-items: center;
+  }
+  /*Riscos entre um texto de menu e o outro*/
+  .sm-blue > li {
+    border-left: 1px solid #3baf75;
+    align-items: center;
+  }
+  /*Uma alteração quase não vista nos riscos entre um texto e o outro*/
+  .sm-blue > li:first-child {
+    border-left: 0;
+  }
+  /*Box dos sub-menus*/
+  .sm-blue ul {
+    border: 1px solid #32c87d;
+    padding: 7px 0;
+    background: #fff;
+    border-radius: 0 0 4px 4px !important;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    align-items: center;
+  }
+  /*Não faz nada só existe*/
+  .sm-blue ul ul {
+    border-radius: 4px !important;
+    background: #fff;
+  }
+  /*Espaços entre as funções dos sub-menus*/
+  .sm-blue ul a, .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted {
+    border: 0 !important;
+    padding: 9px 23px;
+    background: transparent;
+    color: #32c87d;
+    border-radius: 0 !important;
+  }
+  /*Ao colocar a seta do mouse sobre os sub-menus faz com que apareça*/
+  .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted {
+    background: #32c87d;
+    background-image: linear-gradient(to bottom, #32c87d, #32c87d);
+    color: #fff;
+  }
+  /*Não faz nada só existe*/
+  .sm-blue ul a.current {
+    background: #32c87d;
+    background-image: linear-gradient(to bottom, #32c87d, #32c87d);
+    color: #fff;
+  }
+  /*Não faz nada só existe*/
+  .sm-blue ul a.disabled {
+    background: #fff;
+    color: #b3b3b3;
+  }
+  
+  /*posição, tamanho e cor das setas de menu*/
+  .sm-blue ul a .sub-arrow {
+    top: 50%;
+    margin-top: -5px;
+    bottom: auto;
+    left: auto;
+    margin-left: 0;
+    right: 10px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #a1d1e8;
+  }
+  /*Retira as riscas dos sub-menus*/
+  .sm-blue ul li {
+    border: 0;
+  }
+
+  /*Não faz nada só existe*/
+  .sm-blue .scroll-up,
+  .sm-blue .scroll-down {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    background: #fff;
+    height: 20px;
+  }
+  .sm-blue .scroll-up-arrow,
+  .sm-blue .scroll-down-arrow {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-width: 8px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #32c87d transparent;
+  }
+  .sm-blue .scroll-down-arrow {
+    top: 6px;
+    border-style: solid dashed dashed dashed;
+    border-color: #32c87d transparent transparent transparent;
+  }
+  .sm-blue.sm-rtl.sm-vertical a .sub-arrow {
+    right: auto;
+    left: 10px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #a1d1e8 transparent transparent;
+  }
+  .sm-blue.sm-rtl > li:first-child > a, .sm-blue.sm-rtl > li:first-child > :not(ul) a {
+    border-radius: 0 8px 8px 0;
+  }
+  .sm-blue.sm-rtl > li:last-child > a, .sm-blue.sm-rtl > li:last-child > :not(ul) a {
+    border-radius: 8px 0 0 8px !important;
+  }
+  .sm-blue.sm-rtl > li:first-child {
+    border-left: 1px solid #2b82ac;
+  }
+  .sm-blue.sm-rtl > li:last-child {
+    border-left: 0;
+  }
+  .sm-blue.sm-rtl ul a .sub-arrow {
+    right: auto;
+    left: 10px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #a1d1e8 transparent transparent;
+  }
+  .sm-blue.sm-vertical {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  .sm-blue.sm-vertical a {
+    padding: 9px 23px;
+  }
+  .sm-blue.sm-vertical a .sub-arrow {
+    top: 50%;
+    margin-top: -5px;
+    bottom: auto;
+    left: auto;
+    margin-left: 0;
+    right: 10px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #a1d1e8;
+  }
+  .sm-blue.sm-vertical > li:first-child > a, .sm-blue.sm-vertical > li:first-child > :not(ul) a {
+    border-radius: 8px 8px 0 0;
+  }
+  .sm-blue.sm-vertical > li:last-child > a, .sm-blue.sm-vertical > li:last-child > :not(ul) a {
+    border-radius: 0 0 8px 8px !important;
+  }
+  .sm-blue.sm-vertical > li {
+    border-left: 0 !important;
+  }
+  .sm-blue.sm-vertical ul {
+    border-radius: 4px !important;
+  }
+  .sm-blue.sm-vertical ul a {
+    padding: 9px 23px;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+  left: 1100px;
+  top: -3px;
+}
+
+
+
+.nome {
+  width: 150px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+  left: 980px;
+  top: -px;
+  color: white;
+  font-size: 20px;
+}
+
+.selector {
+  background-color: #ffffff;
+  width: 160px;
+  height: 35px;
+  overflow: hidden;
+  left: 1030px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  border-radius: 100px;
+}
+
+#select {
+  background-color: #ffffff;
+  width: 367px;
+  height: 35px;
+  overflow: hidden;
+  left: 1030px;
+  font-size: 15px;
+ border-radius: 5px;
+ border-color: #cacaca;
+}
+
+
+/*# sourceMappingURL=sm-blue.css.map */

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Insumo/Plantação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Signika:400,600'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="../js/insumoPlantacao.js"></script>
+</head>
+
+<body>
+         
+  <!-- Todo o campo do topo da pagina-->
+  <header>
+    <span onclick="btnMenu()"><img class= "menu" src="../imagens/images.png" id="btnMenu"alt="Buscar" /></span>
+    
+    <img class="logo" src="../imagens/Simp.png" alt="some text" width=150 height=45>
+    
+    
+        <!-- <form> que armazena a barra de pesquisa -->
+        <form class="Barra_pesquisa">
+                                                                                                                                                                                        
+        <input class="barra" type="search" id="busca" name="">
+        <button class="botao_pesquisa" type="submit" id="barra"><img src="../imagens/lupa.png" id="btnBusca"alt="Buscar" /></button>
+       
+       
+        <div class="circle">
+          <center><img class="imagem" src="../imagens/mei.jpg" alt="some text" width=5 height=110 style="left: 0px;" ></center>
+        </div>
+        
+    
+        </form>
+
+  </header>
+
+  <section class="main">
+    
+    <!--Contem os dados da coluna de menu e os mantem na lateral da pagina-->
+    <aside class="keep">
+  
+        <br><br><br>
+      <!--A tag <ul> armazena todo o conjunto da lista da coluna-->
+      <ul>
+
+        <!--tag <li> indica que o elemento esta armazenado em uma lista-->
+        <li>
+
+            <!--Adicionar o link da pagina a ser referenciada na tag <a>-->
+            <a href="">
+            <span><img src="../imagens/estoque.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderE">Estoque</center> 
+        </li>
+        <li>
+          <a href="">
+            <span><img src="../imagens/financeiro.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderF">Financeiro</center>
+        </li>
+        <li>
+          <a href="">
+            <span><img src="../imagens/Insumo.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderI">Insumo</center>
+        </li>
+        <li>
+          <a href="">
+            <span><img src="../imagens/safra.png" id="btnBusca"alt="Buscar" /></span>
+          </a>
+          <center style="display: none;" id="esconderS">Safra</center>
+        </li>
+      </ul>
+    </aside>
+  
+
+    <!--(<article>)Tag que armazena o quadro amarelo e as listas-->
+    <article>
+      <center>
+        <br><br>
+        <h2>Insumo</h2><br>
+        <!--Tbela/lista de insumo-->
+        <table class="tg" style="undefined;table-layout: fixed; width: 1124px">
+          <colgroup>
+            <col style="width: 160px">
+            <col style="width: 390px">
+            <col style="width: 200px">
+            <col style="width: 250px">
+            <col style="width: 250px">
+          </colgroup>
+          <tr>
+            <th class="tg-n9g5">Código:</th>
+            <th class="tg-n9g5">Nome:</th>
+            <th class="tg-n9g5">Tipo:</th>
+            <th class="tg-n9g5">Quant. Usada:</th>
+            <th class="tg-n9g5">Tempo de Ação:</th>
+          </tr>
+        </table>
+        <!--<form> que armazena os input's no cadastro de insumo-->
+        <formu action="#" method="post" tabindex="1">
+          <div class="box_pergunta hide">
+            <input type="text" class="form-contact-input" name="codTalhao" style="width: 12%; " placeholder=""disabled />
+            <input type="text" class="form-contact-input" name="nomeTalhao" style="width:30%" height="10%" placeholder="" required />
+            <input type="text" class="form-contact-input" name="tipoTalhao" style="width: 15%" height="10%" placeholder="" required />
+            <input type="text" class="form-contact-input" name="qtdUsada" style="width: 20%" height="10%" placeholder="" required />
+            <input type="text" class="form-contact-input" name="tempoAcao" style="width: 15%" height="10%" placeholder="" required />
+            <!--imagens/botões de adicionar ou retirar um registro-->
+            <img src="../imagens/soma.png" class="small tiny alert clonador" style="cursor: pointer;" >
+            <img src="../imagens/menos.png" class="btn btn_remove" style="cursor: pointer;" >
+          </div>
+        </formu>
+
+          <div id="destinoIn"></div>
+          <div id="origem" align="center"></div>
+          <br>
+
+        <!--Tbela/lista de Talhão-->
+
+
+<!------------------------------------------------------------------------------------------------------------------------------>
+
+
+        <h2>Plantação</h2><br>
+        <table class="tg" style="undefined;table-layout: fixed; width: 1124px">
+          <colgroup>
+            <col style="width: 160px">
+            <col style="width: 390px">
+            <col style="width: 200px">
+            <col style="width: 250px">
+            <col style="width: 250px">
+          </colgroup>
+          <tr>
+            <th class="tg-n9g5">Código:</th>
+            <th class="tg-n9g5">Nome:</th>
+            <th class="tg-n9g5">Data:</th>
+            <th class="tg-n9g5">Safra:</th>
+            <th class="tg-n9g5">Disponibilidade:</th>
+          </tr>
+        </table>
+          <!--<form> que armazena os input's no cadastro de plantacao-->
+          <formu2 action="#" method="post" tabindex="2">
+            <div class="box_pergunta hide2">
+              <input type="text" class="form-contact-input" name="CodigoPlant" style="width: 12%; " placeholder="" disabled />
+              <input type="text" class="form-contact-input" name="NomePlant" style="width:30%" height="10%" placeholder="" required />
+              <input type="text" class="form-contact-input" name="cdSafraPlant" style="width: 15%" height="10%" placeholder="" required />
+              <input type="text" class="form-contact-input" name="AreaPlant" style="width: 20%" height="10%" placeholder="" required />
+              <input type="text" class="form-contact-input" name="Disponibilidade" style="width: 15%" height="10%" placeholder="" required />
+              <!--imagens/botões de adicionar ou retirar um registro-->
+              <img src="../imagens/soma.png" class="small tiny alert clonador2" style="cursor: pointer;" >
+              <img src="../imagens/menos.png" class="btn btn_remove2" style="cursor: pointer;" >
+            </div>
+          </formu2>
+          
+          <div id="destinoPl"></div>
+          <div id="origem" align="center"></div>
+          <br>
+
+        <script>
+            $('.clonador2').click(function(){
+                //clona o modelo oculto, clone(true) para copiar também os manipuladores de eventos
+                $clone = $('.box_pergunta.hide2').clone(true);
+                //remove a classe que oculta o modelo do elemento clonado
+                $clone.removeClass('hide2');
+                //adiciona no form
+                $('formu2').append($clone);
+            });
+            //Para remover
+            $('.btn_remove2').click(function(){
+                $(this).parents('.box_pergunta').remove();
+            });
+            </script>
+
+          <script>
+            $('.clonador').click(function(){
+                //clona o modelo oculto, clone(true) para copiar também os manipuladores de eventos
+                $clone = $('.box_pergunta.hide').clone(true);
+                //remove a classe que oculta o modelo do elemento clonado
+                $clone.removeClass('hide');
+                //adiciona no form
+                $('formu').append($clone);
+            });
+            //Para remover
+            $('.btn_remove').click(function(){
+                $(this).parents('.box_pergunta').remove();
+            });
+            </script>
+        
+        <div class="row">
+          </div>
+          <br><br>
+          <table>
+              <tr>
+                <td>
+                   <input class="botao_padrao" type="button" name="botao_padrao" value="Cadastrar">
+                </td>
+                <td>
+                  <input class="botao_cadastra" type="button" name="botaocadastra" value="Cancelar">
+                </td>
+              </tr>
+             </table>
+
+      </center>
+     </article>
+  </section>
+
+  
+  <!-- partial -->
+  
+ 
+
+</body>
+
+</html>
